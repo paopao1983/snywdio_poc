@@ -4,6 +4,8 @@
 ###### Famework: WebdriverIo
 ###### Assertions: Built-in assertions provided by wdIO. (https://webdriver.io/docs/api/expect-webdriverio)
 ###### Node Version: v16.13.2
+###### Description
+This is the POC built to accomplish some of the Goals of my Career path in 2022. Was built using the www.sny.tv site as an example.
 
 ## Get started
 - Install dependencies:
@@ -23,7 +25,7 @@ I setup *Allure Commandline* to generate reports automaticly after end the execu
 `npx allure open`, execute Command + C to exit.
 
 ##  Environment VARS
-* I set 4 environment vars, to manage in which environment we want to run the test if PROD=Production, DEV=Sevelopment, QA=Stage. To easy use this vars, I use the dotenv module that loads the environment variables from a .env file into process.env (node env vars).
+* I set 4 environment vars, to manage in which environment we want to run the test if PROD=Production, DEV=Development, QA=Stage. To easy use this vars, I use the dotenv module that loads the environment variables from a .env file into process.env (node env vars).
 * Install dotenv `npm install dotenv --save`
 
 **Run the Project for an specific ENV**
