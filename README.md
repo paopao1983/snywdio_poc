@@ -14,7 +14,7 @@ This is the POC built to accomplish some of the Goals of my Career path in 2022.
 - Run All tests:
 `npx wdio` it runs the project in PROD environment by default
 - Run specific test:
-`npx wdio --spec /test/specs/login.test.js`
+`npx wdio --spec test/specs/login.test.js`
 
 ## The report
 * I setup Allure as an option of Reporter. 
