@@ -25,12 +25,12 @@ describe("Home Page Sections", () => {
         await expect(browser).toHaveUrlContaining(partialArtUrl);
     });
 
-    it("Playback first Video on the Homepage", async()=>{
+    it.only("Playback first Video on the Homepage", async()=>{
         HomePage.allureReporter.addStory('Videos');
         HomePage.allureReporter.addSeverity("critical");
 
         await HomePage.firstVideopage.click()
-        await expect(HomePage.firstVideopage).toHaveElementClassContaining('jw-state-playing');
+        await expect(HomePage.firstVideopage).toHaveElementClass('jw-state-playing');
     });
     /***
      * Sometimes Ads are not displayed and is ok, that depends on a schedule contract of SNY
@@ -40,8 +40,8 @@ describe("Home Page Sections", () => {
         HomePage.allureReporter.addSeverity("critical");
         
         await HomePage.firstVideopage.click();
-        await expect(HomePage.firstAdsVideopage).toHaveElementProperty('width'); 
-        await expect(HomePage.firstAdsVideopage).toHaveElementProperty('height'); 
+        await expect(HomePage.firstAdsVideopage).toHaveProperty('width'); 
+        await expect(HomePage.firstAdsVideopage).toHaveProperty('height'); 
     });
 
     after("Report Data to Allure", async()=>{
