@@ -127,7 +127,7 @@ exports.config = {
     services: [//['chromedriver'],
                //['selenium-standalone'], 
                 ['browserstack',{
-                    browerstackLocal: false 
+                    browerstackLocal: false
                 }]
         ],
     // Framework you want to run your specs with.
