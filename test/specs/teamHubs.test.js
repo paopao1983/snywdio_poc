@@ -10,7 +10,7 @@ describe("TeamHubs Page", () => {
         TeamHub.allureReporter.addSeverity("normal");
     });
 
-    it.only("Answering a Team Poll", async()=>{  
+    it("Answering a Team Poll", async()=>{  
         TeamHub.allureReporter.addStory('Poll Functionality');
 
         await TeamHub.answeringPoll();
