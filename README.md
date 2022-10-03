@@ -1,7 +1,7 @@
  ***
 ##   POC for the [SNY.TV](https://www.sny.tv/) site   
 ###### Author: Sandra Castro B      
-###### Famework: WebdriverIo
+###### Framework: WebdriverIo
 ###### Assertions: Built-in assertions provided by wdIO. (https://webdriver.io/docs/api/expect-webdriverio)
 ###### Node Version: v16.13.2
 ###### Description

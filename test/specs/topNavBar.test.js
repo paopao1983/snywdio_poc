@@ -15,7 +15,7 @@ describe('Header: Top Navbar', ()=>{
 
     it('Get the Primary Nav Items', async()=>{
         const primNav = await HomePage.PrimaryNavComponent.primaryNavItems;
-        const currentPrimNav = await HomePage.getTitlesText(primNav);
+        const currentPrimNav = await HomePage.getTextTitles(primNav);
         await expect(currentPrimNav).toEqual(expectedPrimaryNavItems);
     });
 

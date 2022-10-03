@@ -13,7 +13,7 @@ describe("Header: TeamHub Items", () => {
     
     it("Get all the Team Hubs Menu Items", async()=>{ 
         const teamHubsNav = await HomePage.TeamHubsNavComponent.allTeamHubsItems;
-        const currentTeamHubs = await HomePage.getTitlesText(teamHubsNav);
+        const currentTeamHubs = await HomePage.getTextTitles(teamHubsNav);
         await expect(currentTeamHubs).toEqual(expectedTeamHubsNavItems);
     });
     

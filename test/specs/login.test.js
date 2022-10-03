@@ -8,7 +8,7 @@ describe("SNY Login Page", async() => {
         HomePage.allureReporter.addFeature("Login");
         await HomePage.open();
     })
-
+    //Shadow component, the implementation fils on Firefox because of the setValue
     it('login', async()=>{
         HomePage.allureReporter.addStory("Login");
         await HomePage.AccountComponent.FillLogIn(userData.email, userData.password);

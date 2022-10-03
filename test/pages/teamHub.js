@@ -51,6 +51,7 @@ class TeamHub extends Page{
     async answeringPoll(){
         const option = await this.pollOption();
         await this.pollAnswersOptions[option].click(); 
+        await this.pollSubmitBtn.waitForDisplayed()
         await this.pollSubmitBtn.click();
     }
     async pollOption(){

@@ -12,7 +12,7 @@ describe("Home Page Sections", () => {
     it("Validate texts on Homepage sections", async()=>{
         HomePage.allureReporter.addStory('All Sections Texts');
         const sectionsTitles = await HomePage.allTextSections;
-        const currentSections = await HomePage.getTitlesText(sectionsTitles);
+        const currentSections = await HomePage.getTextTitles(sectionsTitles);
 
         await expect(currentSections).toEqual(expectedSections);
     });
@@ -35,13 +35,13 @@ describe("Home Page Sections", () => {
     /***
      * Sometimes Ads are not displayed and is ok, that depends on a schedule contract of SNY
      * with the advertisement company*/
-    it("Ads on Videopage Thumbnails on Watchnow Homepage", async()=>{ 
+    it("Ads on Videopage Thumbnails on Watch now Homepage", async()=>{ 
         HomePage.allureReporter.addStory('Videos');
         HomePage.allureReporter.addSeverity("critical");
         
         await HomePage.firstVideopage.click();
-        await expect(HomePage.firstAdsVideopage).toHaveProperty('width'); 
-        await expect(HomePage.firstAdsVideopage).toHaveProperty('height'); 
+        await expect(HomePage.firstAdsVideopage).toHaveElementProperty('width'); 
+        await expect(HomePage.firstAdsVideopage).toHaveElementProperty('height'); 
     });
 
     after("Report Data to Allure", async()=>{
