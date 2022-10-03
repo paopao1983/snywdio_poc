@@ -25,7 +25,7 @@ describe("Home Page Sections", () => {
         await expect(browser).toHaveUrlContaining(partialArtUrl);
     });
 
-    it.only("Playback first Video on the Homepage", async()=>{
+    it("Playback first Video on the Homepage", async()=>{
         HomePage.allureReporter.addStory('Videos');
         HomePage.allureReporter.addSeverity("critical");
 
