@@ -303,7 +303,7 @@ exports.config = {
      * @param {Object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
-     */
+     
     onComplete: function() {
         const reportError = new Error('Could not generate Allure report')
         const generation = allure(['generate', 'allure-results', '--clean'])
@@ -323,7 +323,7 @@ exports.config = {
                 resolve()
             })
         }) 
-    },
+    },*/
     /**
     * Gets executed when a refresh happens.
     * @param {String} oldSessionId session ID of the old session
