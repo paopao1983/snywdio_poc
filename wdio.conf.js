@@ -1,5 +1,8 @@
 const allure = require('allure-commandline');
-require('dotenv').config();
+
+if(process.env.NODE_ENV != 'production'){
+        require('dotenv').config();
+};
 
 exports.config = {
     //
@@ -127,7 +130,7 @@ exports.config = {
     services: [//['chromedriver'],
                //['selenium-standalone'], 
                 ['browserstack',{
-                    browerstackLocal: false
+                    browerstackLocal: true
                 }]
         ],
     // Framework you want to run your specs with.

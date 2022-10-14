@@ -3,3 +3,4 @@ allure-*
 BStack.env
 .DS_store
 internalnotes.txt
+.env
